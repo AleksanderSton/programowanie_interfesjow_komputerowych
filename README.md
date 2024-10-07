@@ -1,0 +1,2 @@
+# programowanie_interfesjow_komputerowych
+Programy pisane na zajęciach z przedmiotu Programowanie Interfejsów Komputerowych
