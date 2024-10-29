@@ -4,7 +4,7 @@ HANDLE commDev;
 #define BUFF_SIZE 1024;
 bool writeSerialPort(void* buffer, const DWORD numberOfBytesToWrite){
     DWORD numberOfBytesWritten = 0;
-    if(WriteFile(commDev, buffer, numberOfBytesToWrite, &numberOfBytesWritten, nullptr) == 0){
+    if(WriteFile(commDev, buffer, numberOfBytesToWrite, &numberOfBytesWritten, 0) == 0){
         std::cout << "Błąd wysyłania danych!" << std::endl;
         return false;
     }
